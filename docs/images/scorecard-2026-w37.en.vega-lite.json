@@ -1,0 +1,205 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "W37 report card: hy4-preview-f debuts at 17/23",
+   "(23-case library; WorkBuddy ACP lane, x0.00 free tier, band=high)"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "Small label = 21-case public subset (The ladder table in the W37 issue)",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "model": "hy4-preview-f",
+    "pass": 17,
+    "subset": "(15/21)"
+   },
+   {
+    "model": "deepseek-v4.1-flash",
+    "pass": 15,
+    "subset": "(13/21)"
+   }
+  ]
+ },
+ "width": 420,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "hy4-preview-f",
+      "deepseek-v4.1-flash"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "cases passed (/ 23)",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "color": {
+     "field": "model",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "hy4-preview-f",
+       "deepseek-v4.1-flash"
+      ],
+      "range": [
+       "#00838F",
+       "#E67E22"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -5,
+    "fontSize": 13,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "hy4-preview-f",
+      "deepseek-v4.1-flash"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "cases passed (/ 23)",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "pass",
+     "type": "quantitative"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -22,
+    "fontSize": 10,
+    "color": "#8D6E63"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "hy4-preview-f",
+      "deepseek-v4.1-flash"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "cases passed (/ 23)",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "subset",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}
