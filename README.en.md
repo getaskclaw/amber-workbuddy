@@ -15,7 +15,7 @@ Running the private **AMBER** benchmark against catalog models on the WorkBuddy 
 
 ![W37 scorecard: hy4-preview-f enters at 17/23](docs/images/scorecard-2026-w37.en.png)
 
-Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23** (build 5/6 + OPS 6/6 sweep + ui-build 12/12), **deepseek-v4.1-flash 15/23** (A-be92627f 9/9 — the first verify-face pass in suite history). Per-case matrix and lane ledger in the [2026-W37 issue](results/2026-W37.md). Chart sources live beside the PNGs (`docs/images/`, Vega-Lite).
+Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23** (build 5/6 + OPS 6/6 sweep + ui-build 12/12), **deepseek-v4.1-flash 15/23** (A-be92627f 9/9 — first-ever pass on that case; second verify-face pass overall). Per-case matrix and lane ledger in the [2026-W37 issue](results/2026-W37.md). Chart sources live beside the PNGs (`docs/images/`, Vega-Lite).
 
 ## Publishing rules (red lines)
 
@@ -33,8 +33,8 @@ Same model name, same provider, two runs can still differ — sampling parameter
 
 | Edition | Candidate | Score (23 cases / 21-case public subset) | One-liner |
 |---|---|---|---|
-| [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/2 + 1 owed, review/vision still fail |
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash (x0.00 free tier) | **15/23** (13/21) | A-be92627f 9/9 = first verify-face pass in suite history; one case below its official-GA sibling with swapped structure |
+| [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/3, review/vision still fail |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash (x0.00 free tier) | **15/23** (13/21) | A-be92627f 9/9 = first-ever pass on that case (second verify-face pass overall); one case below its official-GA sibling with swapped structure |
 
 ## Disclaimer
 

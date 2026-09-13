@@ -15,7 +15,7 @@ English: [README.en.md](README.en.md)
 
 ![W37 成绩单：hy4-preview-f 17/23 入档即第二梯队](docs/images/scorecard-2026-w37.png)
 
-同一 ACP 车道、同 high 档、同 23 案同哈希：**hy4-preview-f 17/23**（A-be92627f 外的核验面仍挂，但施工 5/6 + OPS 6/6 + UI 12/12）、**deepseek-v4.1-flash 15/23**（核验案 A-be92627f 9/9 = 题库史上首个 verify-face 过案）。逐案矩阵与车道账本见 [2026-W37 期文](results/2026-W37.md)。图源与 PNG 同目录（`docs/images/`，Vega-Lite）。
+同一 ACP 车道、同 high 档、同 23 案同哈希：**hy4-preview-f 17/23**（A-be92627f 外的核验面仍挂，但施工 5/6 + OPS 6/6 + UI 12/12）、**deepseek-v4.1-flash 15/23**（核验案 A-be92627f 9/9 = 该案史上首个过案、核验面第二席）。逐案矩阵与车道账本见 [2026-W37 期文](results/2026-W37.md)。图源与 PNG 同目录（`docs/images/`，Vega-Lite）。
 
 ## 发布纪律（红线）
 
@@ -38,8 +38,8 @@ English: [README.en.md](README.en.md)
 
 | 期 | 考生 | 成绩（23 案 / 公共子集 21） | 一句话 |
 |---|---|---|---|
-| [2026-W37](results/2026-W37.md) | **hy4-preview-f**（x0.00 免费档） | **17/23**（15/21） | 入档即第二梯队；OPS 6/6 + UI 12/12 满分；核验 0/2+1 欠考，审查/视觉仍挂 |
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash（x0.00 免费档） | **15/23**（13/21） | A-be92627f 9/9 = 题库史上首个核验面过案；同脑比官方 GA 道低一案，结构互换 |
+| [2026-W37](results/2026-W37.md) | **hy4-preview-f**（x0.00 免费档） | **17/23**（15/21） | 入档即第二梯队；OPS 6/6 + UI 12/12 满分；核验 0/3，审查/视觉仍挂 |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash（x0.00 免费档） | **15/23**（13/21） | A-be92627f 9/9 = 该案史上首个过案（核验面第二席）；同脑比官方 GA 道低一案，结构互换 |
 
 ## 免责
 
