@@ -6,7 +6,7 @@ Running the private **AMBER** benchmark against catalog models on the WorkBuddy 
 ## What this is
 
 - One `results/YYYY-Www.md` per edition: same questions, same harness, full library per model; models on the same lane side by side.
-- Each edition pins: library size and hashes, per-case d2 score and pass/fail, terminal states, token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
+- Each edition pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states, token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
 - Questions, oracles, transcripts and intermediate artifacts are **never published** (see "Publishing rules").
 - Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek). Scores for the same deepseek-v4.1 family on official/relay lanes live in those repos; this repo's comparison axis is **across models on the WorkBuddy ACP lane**. Cross-repo citations always carry date and band.
 - AMBER is an agentic field benchmark (build / ops / review / vision / requirement-drift); spec and authoring tools at [getaskclaw/amber](https://github.com/getaskclaw/amber); the questions themselves are private.

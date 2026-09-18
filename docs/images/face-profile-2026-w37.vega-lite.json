@@ -8,7 +8,7 @@
   ],
   "fontSize": 16,
   "anchor": "start",
-  "subtitle": "色深 = 通过率；格内 = 通过案数/案数；✗ 与 ∅ 均按未通过计；d2 分值格只取 ✓/✗",
+  "subtitle": "色深 = 通过率；格内 = 通过案数/案数；✗ 与 ∅ 均按未通过计；找茬分值格只取 ✓/✗",
   "subtitleFontSize": 11,
   "subtitleColor": "#777",
   "subtitlePadding": 6
