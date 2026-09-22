@@ -37,6 +37,7 @@ Same model name, same provider, two runs can still differ — sampling parameter
 |---|---|---|---|
 | [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/3, review/vision still fail |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash (x0.00 free tier) | **15/23** (13/21) | A-be92627f 9/9 = first-ever pass on that case (second verify-face pass overall); one case below its official-GA sibling with swapped structure |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 1 held here | 1 W37 hy4 vision cell held |
 
 ## Disclaimer
 
