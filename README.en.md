@@ -5,11 +5,13 @@ Running the private **AMBER** benchmark against catalog models on the WorkBuddy 
 
 ## What this is
 
-- One `results/YYYY-Www.md` per edition: same questions, same harness, full library per model; models on the same lane side by side.
-- Each edition pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states, token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
-- Questions, oracles, transcripts and intermediate artifacts are **never published** (see "Publishing rules").
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
+
+- One `results/YYYY-Www.md` per edition: same questions, same harness (the program that runs the exam and scores it), full library per model; models on the same lane side by side.
+- Each edition pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run process exited), token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
+- Questions, oracles, transcripts (full answer logs)s and intermediate artifacts are **never published** (see "Publishing rules").
 - Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun). Scores for the same deepseek-v4.1 family on official/relay lanes live in those repos; this repo's comparison axis is **across models on the WorkBuddy ACP lane**. Cross-repo citations always carry date and band.
-- AMBER is an agentic field benchmark (build / ops / review / vision / requirement-drift); spec and authoring tools at [getaskclaw/amber](https://github.com/getaskclaw/amber); the questions themselves are private.
+- AMBER is an agentic field benchmark (build / ops / review / vision / requirement-drift (the requirements change mid-task)); spec and authoring tools at [getaskclaw/amber](https://github.com/getaskclaw/amber); the questions themselves are private.
 
 ## W37 in one minute
 
@@ -21,7 +23,7 @@ Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23**
 
 1. Publish only: scores and aggregates, token usage (where the lane reports it), speed, qualitative verdicts.
 2. Never publish: question content, oracles/graders, transcripts, candidate workspaces, any intermediate that could reconstruct a question.
-3. Every edition pins: model ID, effort band, date (UTC), harness version, per-case content hash (bundle_sha) — checkable against the public hash index in [amber](https://github.com/getaskclaw/amber).
+3. Every edition pins: model ID, effort band (the thinking-effort setting), date (UTC), harness version, per-case content hash (bundle_sha (per-case content-hash fingerprint)) — checkable against the public hash index in [amber](https://github.com/getaskclaw/amber).
 4. Case IDs and question structure are private: published results use only stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes as handles; internal case IDs, variant names, and question descriptions never appear.
 5. Tone: this is a community measurement, not an attack on any vendor. Data speaks; wording stays restrained.
 
