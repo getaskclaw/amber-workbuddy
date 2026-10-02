@@ -1,5 +1,7 @@
 # amber-workbuddy
 
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ WorkBuddy direct lane: 3 papers (A-a5608487, A-984e80ee, A-24bcf707) now NA, score 16/24 → **13'/24**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+
 Running the private **AMBER** benchmark against catalog models on the WorkBuddy (CodeBuddy) ACP lane — the ACP mode of Tencent's CodeBuddy CLI, with a server-pushed model catalog (named models plus alias tiers). Results are public; questions are not.
 中文：[README.md](README.md)
 
