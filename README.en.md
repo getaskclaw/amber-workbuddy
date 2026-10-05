@@ -24,7 +24,7 @@ Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy).
 |  | Ops | Follow the runbook | 6/6 | 6/6 | 6/6 | 5/6 | 6/6 |
 |  | Requirements | Ship A when A was asked | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 |
 |  | Convergence | Finish, don't spin | 1/1 | 1/1 | 1/1 | 0/1 | 1/1 |
-| Judging | UI | Build the page to the mock | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 | 1/1 |
+| Judging | UI | Build the page to the mock | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 1/1 |
 |  | Vision | Spot defects in screenshots | 1/1 | 0/1 | 0/1 | 1/1 | 0/1 |
 |  | Defense | Plug every hole in the validator | 0/2 · 1 NA | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA | 0/2 · 1 NA |
 |  | Attribution | Pin defects to their root cause | 0/1 | 0/1 | 0/1 | 0/1 | 0/1 |
@@ -49,9 +49,9 @@ The W37 column is the ACP-lane hy4-preview-f; W40 is the direct lane in the isol
 
 ## W40 in one minute
 
-![W40 divergence: the 6 of 24 cases where the four direct-lane models differ](results/assets/2026-W40-diff.en.png?v=20261004)
+![W40 divergence: the 5 of 24 cases where the four direct-lane models differ](results/assets/2026-W40-diff.en.png?v=20261005)
 
-Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46 is on hold (NA) on three lanes, and a loss for minimax-m3; defense case A-d511f9e8 is on hold on every lane. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md). The other 18 cases have the same result for all four: 14 all pass, 3 all fail (A-87c472cb, A-a317e74b, A-cdc3d11a), 1 all NA (A-d511f9e8). The full 24-case matrix is in the issue.
+Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46 and the defense case A-d511f9e8 are on hold (NA) on all four lanes. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md). The other 19 cases have the same result for all four: 14 all pass, 3 all fail (A-87c472cb, A-a317e74b, A-cdc3d11a), 2 all NA (A-d511f9e8, A-d9b79b46). The full 24-case matrix is in the issue.
 
 ## W37 in one minute
 
@@ -78,7 +78,7 @@ Same model name, same provider, two runs can still differ — sampling parameter
 | [2026-W40](results/2026-W40.en.md) | **deepseek-v4.1-flash** (WorkBuddy direct) | **18'/24** | Highest of the four, no timeouts; passed the vision re-take; attribution A-a317e74b 14/15, one check short |
 | [2026-W40](results/2026-W40.en.md) | glm-5.3-flash (WorkBuddy direct) | **17'/24** | Passed review A-47eea242 (fault-finding 4); this channel does not accept image input, vision case not passed |
 | [2026-W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy direct) | **16'/24** | 3 NA (2 defense, 1 UI); saw the picture but did not pass the vision case; a different lane from the W37 ACP row, not compared |
-| [2026-W40](results/2026-W40.en.md) | minimax-m3 (WorkBuddy direct) | **16'/24** | Fewest NA (1), most losses (7); did not pass the convergence case or the brand case (a loss, not a hold); 9 missing cases made up the same day |
+| [2026-W40](results/2026-W40.en.md) | minimax-m3 (WorkBuddy direct) | **16'/24** | Most losses (6); did not pass the convergence case; brand case NA (on hold; changed from a loss to NA on 2026-10-05); 9 missing cases made up the same day |
 | [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/3, review/vision still fail |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash (x0.00 free tier) | **15/23** (13/21) | A-be92627f 9/9 = first-ever pass on that case (second verify-face pass overall); one case below its official-GA sibling with swapped structure |
 | [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 1 held here | 1 W37 hy4 vision cell held |
