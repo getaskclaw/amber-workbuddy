@@ -49,15 +49,13 @@ The W37 column is the ACP-lane hy4-preview-f; W40 is the direct lane in the isol
 
 ## W40 in one minute
 
-![W40 case by case: four direct-lane models](results/assets/2026-W40-strip.en.png?v=20261004)
+![W40 divergence: the 6 of 24 cases where the four direct-lane models differ](results/assets/2026-W40-diff.en.png?v=20261004)
 
-Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46 is on hold (NA) on three lanes, and a loss for minimax-m3; defense case A-d511f9e8 is on hold on every lane. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md).
+Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46 is on hold (NA) on three lanes, and a loss for minimax-m3; defense case A-d511f9e8 is on hold on every lane. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md). The other 18 cases have the same result for all four: 14 all pass, 3 all fail (A-87c472cb, A-a317e74b, A-cdc3d11a), 1 all NA (A-d511f9e8). The full 24-case matrix is in the issue.
 
 ## W37 in one minute
 
-![W37 scorecard: hy4-preview-f enters at 17/23](docs/images/scorecard-2026-w37.en.png)
-
-Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23** (build 5/6 + OPS 6/6 sweep + ui-build 12/12), **deepseek-v4.1-flash 15/23** (A-be92627f 9/9 — first-ever pass on that case; second verify-face pass overall). Per-case matrix and lane ledger in the [2026-W37 issue](results/2026-W37.md). Chart sources live beside the PNGs (`docs/images/`, Vega-Lite).
+Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23** (build 5/6 + OPS 6/6 sweep + ui-build 12/12), **deepseek-v4.1-flash 15/23** (A-be92627f 9/9 — first-ever pass on that case; second verify-face pass overall). Per-case matrix and lane ledger in the [2026-W37 issue](results/2026-W37.md).
 
 The W37 numbers above use the issue's own count (23 cases). The "Scoreboard" above counts this ACP-lane hy4-preview-f row as 18'/24 on the current library: the 17/23 plus the convergence case that was added later and passed, with defense case A-d511f9e8 as NA through the all-lane hold. W37 and W40 differ in channel and exam room, so they are not compared cell by cell.
 
