@@ -1,13 +1,14 @@
+[English](README.md) · 简体中文
+
 # amber-workbuddy
 
-> ⚠️ **Correction (2026-10-02, second)**: one defense-axis case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the candidate delivered, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
+> ⚠️ **Correction (2026-10-02, second)**: one defense case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the model gave in, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
 
-> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ WorkBuddy direct lane: 3 papers (A-a5608487, A-984e80ee, A-24bcf707) now NA, score 16/24 → **13'/24**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a model that left its own paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ WorkBuddy direct lane: 3 papers (A-a5608487, A-984e80ee, A-24bcf707) now NA, score 16/24 → **13'/24**. The cause was an isolation fault in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
 
-> **From W40 the exam room is isolated**: from 2026-W40 the exams in this repo are taken in an isolated room, so W40 cells are not comparable cell by cell with W37 or W39 (see the [2026-W40 issue](results/2026-W40.en.md)).
+> **From W40 the exam room is isolated**: from 2026-W40 the exams in this repo are taken in an isolated room, so W40 cells cannot be compared cell by cell with W37 or W39 (see the [2026-W40 issue](results/2026-W40.en.md)).
 
 Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy). Results are public; questions are not. There are two channels so far: the ACP lane (the ACP mode of Tencent's CodeBuddy CLI, with a server-pushed model catalog; W37) and the direct lane (`www.workbuddy.ai/v2`; W39 and W40).
-中文：[README.md](README.md)
 
 > **In one line**: four models on the WorkBuddy direct lane each took the same 24 field tasks in the isolated W40 exam room, and passed **deepseek-v4.1-flash 18'/24 · glm-5.3-flash 17'/24 · hy4-preview-f 16'/24 · minimax-m3 16'/24**. The four are almost the same on the hands-on tasks (coding, delivery, ops, requirements); they differ on the judgment tasks (vision, review, attribution).
 >
@@ -31,20 +32,19 @@ Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy).
 |  | Review | Inspect someone else's work | 1/2 | 1/2 | 0/2 | 1/2 | 1/2 |
 |  | **Total** |  | **18'/24** | **17'/24** | **16'/24** | **16'/24** | **18'/24** |
 
-Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
+Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` has at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
 
 <!-- scoreboard:end -->
 
-The W37 column is the ACP-lane hy4-preview-f; W40 is the direct lane in the isolated room: the columns are not comparable cell by cell.
+The W37 column is the ACP-lane hy4-preview-f; W40 is the direct lane in the isolated room: the columns cannot be compared cell by cell.
 
 ## What this is
 
-- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
-
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a case with more than one variant has more runs).
 - One `results/YYYY-Www.md` per edition: same questions, same harness (the program that runs the exam and scores it), full library per model; models on the same lane side by side.
-- Each edition pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run process exited), token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
+- Each edition pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run ended), token usage where the lane reports it (this lane does not — wall clock stands in), latency, environment fingerprint, and verdicts written under evidence rules.
 - Questions, oracles, transcripts (full answer logs)s and intermediate artifacts are **never published** (see "Publishing rules").
-- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun). Scores for the same deepseek-v4.1 family on official/relay lanes live in those repos; this repo's comparison axis is **across models on the WorkBuddy lanes** (the ACP lane and the direct lane are read separately). Cross-repo citations always carry date and band.
+- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun). Scores for the same deepseek-v4.1 family on official/relay lanes live in those repos; this repo's benchmark axis is **across models on the WorkBuddy lanes** (the ACP lane and the direct lane are read separately). Cross-repo citations always carry date and band.
 - AMBER is an agentic field benchmark (build / ops / review / vision / requirement-drift (the requirements change mid-task)); spec and authoring tools at [getaskclaw/amber](https://github.com/getaskclaw/amber); the questions themselves are private.
 
 ## W40 in one minute
@@ -61,13 +61,13 @@ The W37 numbers above use the issue's own count (23 cases). The "Scoreboard" abo
 
 ## Publishing rules (red lines)
 
-1. Publish only: scores and aggregates, token usage (where the lane reports it), speed, qualitative verdicts.
-2. Never publish: question content, oracles/graders, transcripts, candidate workspaces, any intermediate that could reconstruct a question.
+1. Publish only: scores and totals, token usage (where the lane reports it), speed, verdicts.
+2. Never publish: question content, oracles/graders, transcripts, candidate workspaces, any intermediate that could rebuild a question.
 3. Every edition pins: model ID, effort band (the thinking-effort setting), date (UTC), harness version, per-case content hash (bundle_sha (per-case content-hash fingerprint)) — checkable against the public hash index in [amber](https://github.com/getaskclaw/amber).
 4. Case IDs and question structure are private: published results use only stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes as handles; internal case IDs, variant names, and question descriptions never appear.
-5. Tone: this is a community measurement, not an attack on any vendor. Data speaks; wording stays restrained.
+5. Tone: this is a community measurement, not an attack on any vendor. Data speaks; wording stays simple.
 
-## A methodological caveat
+## A methods caveat
 
 Same model name, same provider, two runs can still differ — sampling parameters, load, and server-side versions all drift; relay/aggregator lanes add a framing layer on top. Every conclusion here carries a date and a band, and lanes get re-measured regularly. A single day's number is a snapshot, not a law.
 
@@ -85,4 +85,4 @@ Same model name, same provider, two runs can still differ — sampling parameter
 
 ## Disclaimer
 
-No affiliation with or sponsorship by Tencent or CodeBuddy/WorkBuddy. Scores are snapshots of a specific week and band, not purchasing advice.
+Not affiliated with or sponsored by Tencent or CodeBuddy/WorkBuddy. Scores are snapshots of a specific week and band, not buying advice.
