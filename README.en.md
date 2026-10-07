@@ -8,9 +8,11 @@
 
 > **From W40 the exam room is isolated**: from 2026-W40 the exams in this repo are taken in an isolated room, so W40 cells cannot be compared cell by cell with W37 or W39 (see the [2026-W40 issue](results/2026-W40.en.md)).
 
+> **2026-10-07 update**: review case A-cdc3d11a is now NA (held) on every lane; the denominator stays 24: on one review case the grader counted every sub-point of a well-formed finding as a separate unproven claim and treated real defects outside its short answer list as false alarms, so a correct, well-formatted review could not reach the passing line; the case is held on every lane, denominator unchanged, until the grader and exam room are repaired and the case is re-sat. The five lanes in this repo (the four direct-lane models plus hy4-preview-f on the ACP lane) all had a loss on this cell and now have NA; pass counts are unchanged (direct lane: deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24; ACP lane: hy4-preview-f 18'/24). On the whole board the cell moves from a loss to NA on 27 lanes; no sitting is re-run and no model's ability is concluded. See the [amber spec repo correction of 2026-10-07 (A-cdc3d11a)](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-07-a-cdc3d11a.en.md), the [2026-W40 issue](results/2026-W40.en.md) and the [2026-W37 issue](results/2026-W37.md).
+
 Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy). Results are public; questions are not. There are two channels so far: the ACP lane (the ACP mode of Tencent's CodeBuddy CLI, with a server-pushed model catalog; W37) and the direct lane (`www.workbuddy.ai/v2`; W39 and W40).
 
-> **In one line**: four models on the WorkBuddy direct lane each took the same 24 field tasks in the isolated W40 exam room, and passed **deepseek-v4.1-flash 18'/24 · glm-5.3-flash 17'/24 · hy4-preview-f 16'/24 · minimax-m3 16'/24**. The four are almost the same on the hands-on tasks (coding, delivery, ops, requirements); they differ on the judgment tasks (vision, review, attribution).
+> **In one line**: four models on the WorkBuddy direct lane each took the same 24 field tasks in the isolated W40 exam room, and passed **deepseek-v4.1-flash 18'/24 · glm-5.3-flash 17'/24 · hy4-preview-f 16'/24 · minimax-m3 16'/24**. The four are almost the same on the hands-on tasks (coding, delivery, ops, requirements); they differ on the judgment tasks (vision, review, attribution; one review case has been held, not scored, since 2026-10-07).
 >
 > A `'` after a score means some cases are NA: not counted as a pass or a fail. The reason for each NA is in the issue. hy4-preview-f has two rows on the board: the ACP lane (W37) and the direct lane (W40). They are different lanes in different exam rooms, so they are not compared, and this page does not say the model got stronger or weaker.
 
@@ -29,7 +31,7 @@ Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy).
 |  | Vision | Spot defects in screenshots | 1/1 | 0/1 | 0/1 | 1/1 | 0/1 |
 |  | Defense | Plug every hole in the validator | 0/2 · 1 NA | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA | 0/2 · 1 NA |
 |  | Attribution | Pin defects to their root cause | 0/1 | 0/1 | 0/1 | 0/1 | 0/1 |
-|  | Review | Inspect someone else's work | 1/2 | 1/2 | 0/2 | 1/2 | 1/2 |
+|  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 0/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
 |  | **Total** |  | **18'/24** | **17'/24** | **16'/24** | **16'/24** | **18'/24** |
 
 Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` has at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
@@ -49,15 +51,15 @@ The W37 column is the ACP-lane hy4-preview-f; W40 is the direct lane in the isol
 
 ## W40 in one minute
 
-![W40 divergence: the 5 of 24 cases where the four direct-lane models differ](results/assets/2026-W40-diff.en.png?v=20261005)
+![W40 divergence: the 5 of 24 cases where the four direct-lane models differ](results/assets/2026-W40-diff.en.png?v=20261007)
 
-Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46 and the defense case A-d511f9e8 are on hold (NA) on all four lanes. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md). The other 19 cases have the same result for all four: 14 all pass, 3 all fail (A-87c472cb, A-a317e74b, A-cdc3d11a), 2 all NA (A-d511f9e8, A-d9b79b46). The full 24-case matrix is in the issue.
+Same direct lane, same day (2026-10-04, UTC), high band, same isolated exam room, same 24 cases and hashes: **deepseek-v4.1-flash 18'/24, glm-5.3-flash 17'/24, hy4-preview-f 16'/24, minimax-m3 16'/24**. On the vision case (A-ea80d793) the room's image request was rejected in the first sitting; after the room fix only that cell was re-taken. The brand case A-d9b79b46, the defense case A-d511f9e8 and, since 2026-10-07, the review case A-cdc3d11a are on hold (NA) on all four lanes. The per-case matrix, the exam conditions and the explanation of each NA are in the [2026-W40 issue](results/2026-W40.en.md). The other 19 cases have the same result for all four: 14 all pass, 2 all fail (A-87c472cb, A-a317e74b), 3 all NA (A-d511f9e8, A-d9b79b46, A-cdc3d11a). The full 24-case matrix is in the issue.
 
 ## W37 in one minute
 
 Same ACP lane, same high band, same 23 cases and hashes: **hy4-preview-f 17/23** (build 5/6 + OPS 6/6 sweep + ui-build 12/12), **deepseek-v4.1-flash 15/23** (A-be92627f 9/9 — first-ever pass on that case; second verify-face pass overall). Per-case matrix and lane ledger in the [2026-W37 issue](results/2026-W37.md).
 
-The W37 numbers above use the issue's own count (23 cases). The "Scoreboard" above counts this ACP-lane hy4-preview-f row as 18'/24 on the current library: the 17/23 plus the convergence case that was added later and passed, with defense case A-d511f9e8 as NA through the all-lane hold. W37 and W40 differ in channel and exam room, so they are not compared cell by cell.
+The W37 numbers above use the issue's own count (23 cases). The "Scoreboard" above counts this ACP-lane hy4-preview-f row as 18'/24 on the current library: the 17/23 plus the convergence case that was added later and passed, with defense case A-d511f9e8 and review case A-cdc3d11a as NA through the all-lane holds. W37 and W40 differ in channel and exam room, so they are not compared cell by cell.
 
 ## Publishing rules (red lines)
 
@@ -77,9 +79,9 @@ Same model name, same provider, two runs can still differ — sampling parameter
 |---|---|---|---|
 | [2026-W40](results/2026-W40.en.md) | **deepseek-v4.1-flash** (WorkBuddy direct) | **18'/24** | Highest of the four, no timeouts; passed the vision re-take; attribution A-a317e74b 14/15, one check short |
 | [2026-W40](results/2026-W40.en.md) | glm-5.3-flash (WorkBuddy direct) | **17'/24** | Passed review A-47eea242 (fault-finding 4); this channel does not accept image input, vision case not passed |
-| [2026-W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy direct) | **16'/24** | 3 NA (2 defense, 1 UI); saw the picture but did not pass the vision case; a different lane from the W37 ACP row, not compared |
+| [2026-W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy direct) | **16'/24** | 4 NA (2 defense, 1 UI, 1 review); saw the picture but did not pass the vision case; a different lane from the W37 ACP row, not compared |
 | [2026-W40](results/2026-W40.en.md) | minimax-m3 (WorkBuddy direct) | **16'/24** | Most losses (6); did not pass the convergence case; brand case NA (on hold; changed from a loss to NA on 2026-10-05); 9 missing cases made up the same day |
-| [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/3, review/vision still fail |
+| [2026-W37](results/2026-W37.md) | **hy4-preview-f** (x0.00 free tier) | **17/23** (15/21) | Second-tier entry on debut; OPS 6/6 sweep + ui-build 12/12; verify 0/3, vision still fails; review case A-cdc3d11a held (NA) since 2026-10-07 |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash (x0.00 free tier) | **15/23** (13/21) | A-be92627f 9/9 = first-ever pass on that case (second verify-face pass overall); one case below its official-GA sibling with swapped structure |
 | [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 1 held here | 1 W37 hy4 vision cell held |
 
