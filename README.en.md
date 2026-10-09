@@ -34,7 +34,7 @@ Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy).
 |  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 0/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
 |  | **Total** |  | **18'/24** | **17'/24** | **16'/24** | **16'/24** | **18'/24** |
 
-Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` has at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
+Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
 
 <!-- scoreboard:end -->
 
