@@ -1,0 +1,1558 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "#FFFFFF",
+ "padding": 16,
+ "width": 471,
+ "height": 473,
+ "title": {
+  "text": "HY4Free high · 2026-W45: cases passed per axis (one dot = one case)",
+  "fontSize": 16,
+  "anchor": "middle",
+  "offset": 10,
+  "color": "#263238"
+ },
+ "config": {
+  "font": "Liberation Sans",
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0,
+      "y": 0.0
+     },
+     {
+      "x": 1,
+      "y": 0.0
+     },
+     {
+      "x": 2,
+      "y": 0.0
+     },
+     {
+      "x": 3,
+      "y": 0.0
+     },
+     {
+      "x": 4,
+      "y": 0.0
+     },
+     {
+      "x": 0,
+      "y": 1.0
+     },
+     {
+      "x": 1,
+      "y": 1.0
+     },
+     {
+      "x": 2,
+      "y": 1.0
+     },
+     {
+      "x": 0,
+      "y": 2.0
+     },
+     {
+      "x": 1,
+      "y": 2.0
+     },
+     {
+      "x": 2,
+      "y": 2.0
+     },
+     {
+      "x": 3,
+      "y": 2.0
+     },
+     {
+      "x": 4,
+      "y": 2.0
+     },
+     {
+      "x": 5,
+      "y": 2.0
+     },
+     {
+      "x": 0,
+      "y": 3.0
+     },
+     {
+      "x": 0,
+      "y": 4.0
+     },
+     {
+      "x": 0,
+      "y": 5.7
+     },
+     {
+      "x": 0,
+      "y": 9.7
+     },
+     {
+      "x": 0.0,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#1B7F79",
+    "stroke": "#1B7F79"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5,
+      "y": 0.0
+     },
+     {
+      "x": 0,
+      "y": 6.7
+     },
+     {
+      "x": 0,
+      "y": 8.7
+     },
+     {
+      "x": 5.4,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#FFFFFF",
+    "stroke": "#C0392B"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0,
+      "y": 7.7
+     },
+     {
+      "x": 1,
+      "y": 7.7
+     },
+     {
+      "x": 1,
+      "y": 9.7
+     },
+     {
+      "x": 10.8,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#AEB6BF",
+    "stroke": "#AEB6BF"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -6.1000000000000005,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Building",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Coding",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 1.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Delivery",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 2.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Ops",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 3.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Requirements",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 4.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Convergence",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -6.1000000000000005,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Judging",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "UI",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 6.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Vision",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 7.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Defense",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 8.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Attribution",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 9.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Review",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -0.35,
+      "y": -1.75
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "HY4Free high (WorkBuddy (routed API))",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -0.35,
+      "y": -1.05
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "18'/24 · W45",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 13,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5.65,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "5/6",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 2.65,
+      "y": 1.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "3/3",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5.65,
+      "y": 2.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "6/6",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 3.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 4.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 6.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 7.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/2 · 2 NA",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 8.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 9.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/2 · 1 NA",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.6,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "passed 18",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 6.0,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "failed 3",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 11.4,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "NA 3 (not counted)",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 12.299999999999999
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "Each dot is one scored task (case). NA = void or held, neither win nor loss; a total with ' includes NA.",
+    "align": "center",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 11,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 13.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "All columns are from the same week (W45); test dates may differ. Same library (24 cases). Most axes hold only 1–2 cases.",
+    "align": "center",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 11,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  }
+ ]
+}

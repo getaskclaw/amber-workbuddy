@@ -16,23 +16,25 @@ Running the private **AMBER** benchmark against models on WorkBuddy (CodeBuddy).
 >
 > A `'` after a score means some cases are NA: not counted as a pass or a fail. The reason for each NA is in the issue. hy4-preview-f has two rows on the board: the ACP lane (W37) and the direct lane (W40). They are different lanes in different exam rooms, so they are not compared, and this page does not say the model got stronger or weaker.
 
+**HY4Free high, 18'/24 (18 wins · 3 losses · 3 NA), tested 2026-11-04.** [Full result and audit scope](results/2026-W45.en.md). WorkBuddy routed API; separate from hy4-preview-f. Three NA cases remain in the denominator. No first-answer or complete website-cost claim.
+
 ## Scoreboard
 
 <!-- scoreboard:start -->
 
-| Group | Axis | What it tests | deepseek-v4.1-flash (WorkBuddy direct) · [W40](results/2026-W40.en.md) | glm-5.3-flash (WorkBuddy direct) · [W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy direct) · [W40](results/2026-W40.en.md) | minimax-m3 (WorkBuddy direct) · [W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy ACP) · [W37](results/2026-W37.md) |
-|---|---|---|:-:|:-:|:-:|:-:|:-:|
-| Building | Coding | Implement the spec correctly | 5/6 | 5/6 | 5/6 | 5/6 | 5/6 |
-|  | Delivery | Done means handed in | 3/3 | 3/3 | 3/3 | 3/3 | 3/3 |
-|  | Ops | Follow the runbook | 6/6 | 6/6 | 6/6 | 5/6 | 6/6 |
-|  | Requirements | Ship A when A was asked | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 |
-|  | Convergence | Finish, don't spin | 1/1 | 1/1 | 1/1 | 0/1 | 1/1 |
-| Judging | UI | Build the page to the mock | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 1/1 |
-|  | Vision | Spot defects in screenshots | 1/1 | 0/1 | 0/1 | 1/1 | 0/1 |
-|  | Defense | Plug every hole in the validator | 0/2 · 1 NA | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA | 0/2 · 1 NA |
-|  | Attribution | Pin defects to their root cause | 0/1 | 0/1 | 0/1 | 0/1 | 0/1 |
-|  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 0/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
-|  | **Total** |  | **18'/24** | **17'/24** | **16'/24** | **16'/24** | **18'/24** |
+| Group | Axis | What it tests | HY4Free high (WorkBuddy (routed API)) · [W45](results/2026-W45.en.md) | deepseek-v4.1-flash (WorkBuddy direct) · [W40](results/2026-W40.en.md) | glm-5.3-flash (WorkBuddy direct) · [W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy direct) · [W40](results/2026-W40.en.md) | minimax-m3 (WorkBuddy direct) · [W40](results/2026-W40.en.md) | hy4-preview-f (WorkBuddy ACP) · [W37](results/2026-W37.md) |
+|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| Building | Coding | Implement the spec correctly | 5/6 | 5/6 | 5/6 | 5/6 | 5/6 | 5/6 |
+|  | Delivery | Done means handed in | 3/3 | 3/3 | 3/3 | 3/3 | 3/3 | 3/3 |
+|  | Ops | Follow the runbook | 6/6 | 6/6 | 6/6 | 6/6 | 5/6 | 6/6 |
+|  | Requirements | Ship A when A was asked | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 |
+|  | Convergence | Finish, don't spin | 1/1 | 1/1 | 1/1 | 1/1 | 0/1 | 1/1 |
+| Judging | UI | Build the page to the mock | 1/1 | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 0/1 · 1 NA | 1/1 |
+|  | Vision | Spot defects in screenshots | 0/1 | 1/1 | 0/1 | 0/1 | 1/1 | 0/1 |
+|  | Defense | Plug every hole in the validator | 0/2 · 2 NA | 0/2 · 1 NA | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA | 0/2 · 1 NA |
+|  | Attribution | Pin defects to their root cause | 0/1 | 0/1 | 0/1 | 0/1 | 0/1 | 0/1 |
+|  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA | 0/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
+|  | **Total** |  | **18'/24** | **18'/24** | **17'/24** | **16'/24** | **16'/24** | **18'/24** |
 
 Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
 

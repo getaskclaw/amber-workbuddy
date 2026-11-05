@@ -1,0 +1,1558 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "#FFFFFF",
+ "padding": 16,
+ "width": 471,
+ "height": 473,
+ "title": {
+  "text": "HY4Free high · 2026-W45：逐轴过案数（一点 = 一案）",
+  "fontSize": 16,
+  "anchor": "middle",
+  "offset": 10,
+  "color": "#263238"
+ },
+ "config": {
+  "font": "WenQuanYi Zen Hei",
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0,
+      "y": 0.0
+     },
+     {
+      "x": 1,
+      "y": 0.0
+     },
+     {
+      "x": 2,
+      "y": 0.0
+     },
+     {
+      "x": 3,
+      "y": 0.0
+     },
+     {
+      "x": 4,
+      "y": 0.0
+     },
+     {
+      "x": 0,
+      "y": 1.0
+     },
+     {
+      "x": 1,
+      "y": 1.0
+     },
+     {
+      "x": 2,
+      "y": 1.0
+     },
+     {
+      "x": 0,
+      "y": 2.0
+     },
+     {
+      "x": 1,
+      "y": 2.0
+     },
+     {
+      "x": 2,
+      "y": 2.0
+     },
+     {
+      "x": 3,
+      "y": 2.0
+     },
+     {
+      "x": 4,
+      "y": 2.0
+     },
+     {
+      "x": 5,
+      "y": 2.0
+     },
+     {
+      "x": 0,
+      "y": 3.0
+     },
+     {
+      "x": 0,
+      "y": 4.0
+     },
+     {
+      "x": 0,
+      "y": 5.7
+     },
+     {
+      "x": 0,
+      "y": 9.7
+     },
+     {
+      "x": 0.0,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#1B7F79",
+    "stroke": "#1B7F79"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5,
+      "y": 0.0
+     },
+     {
+      "x": 0,
+      "y": 6.7
+     },
+     {
+      "x": 0,
+      "y": 8.7
+     },
+     {
+      "x": 4.6,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#FFFFFF",
+    "stroke": "#C0392B"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0,
+      "y": 7.7
+     },
+     {
+      "x": 1,
+      "y": 7.7
+     },
+     {
+      "x": 1,
+      "y": 9.7
+     },
+     {
+      "x": 9.2,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "point",
+    "shape": "circle",
+    "size": 300,
+    "strokeWidth": 2.2,
+    "opacity": 1,
+    "filled": true,
+    "fill": "#AEB6BF",
+    "stroke": "#AEB6BF"
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -6.1000000000000005,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "施工面",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "编码",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 1.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "交付",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 2.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "运维",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 3.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "需求",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 4.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "收敛",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -6.1000000000000005,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "判断面",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "UI",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 6.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "视觉",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 7.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "防御",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 8.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "归因",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -1.1,
+      "y": 9.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "审查",
+    "align": "right",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -0.35,
+      "y": -1.75
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "HY4Free high (WorkBuddy (routed API))",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "bold",
+    "fontSize": 14,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": -0.35,
+      "y": -1.05
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "18'/24 · W45",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 13,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5.65,
+      "y": 0.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "5/6",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 2.65,
+      "y": 1.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "3/3",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5.65,
+      "y": 2.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "6/6",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 3.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 4.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 5.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 6.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 7.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/2 · 2 NA",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.65,
+      "y": 8.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "0/1",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 9.7
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "1/2 · 1 NA",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 0.6,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "通过 18",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 5.199999999999999,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "未过 3",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 9.799999999999999,
+      "y": 11.2
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "NA 3（不计胜负）",
+    "align": "left",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "fill": "#263238",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 12.299999999999999
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "每个点是一道计分任务（案）。NA = 作废或挂起，不计胜负；总分带 ' 表示含 NA。",
+    "align": "center",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 11,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1.65,
+      "y": 13.0
+     }
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -6.2,
+       9.5
+      ]
+     },
+     "axis": null
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -2.2,
+       13.6
+      ],
+      "reverse": true
+     },
+     "axis": null
+    }
+   },
+   "mark": {
+    "type": "text",
+    "text": "各列考试周次相同（W45），具体日期可能不同；同一题库（24 案）。多数轴只有 1–2 案，单案即可改变该轴读数。",
+    "align": "center",
+    "baseline": "middle",
+    "fontWeight": "normal",
+    "fontSize": 11,
+    "fill": "#607D8B",
+    "opacity": 1
+   }
+  }
+ ]
+}
